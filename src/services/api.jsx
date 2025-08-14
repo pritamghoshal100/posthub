@@ -1,7 +1,19 @@
 import axios from 'axios';
 import { auth } from '../config/firebase';
 
-const API_URL = '/api';
+
+//DEVELOPEMENT
+// const API_URL = '/api';
+
+// const api = axios.create({
+//   baseURL: API_URL,
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+// });
+
+
+const API_URL = 'https://blog-app-backend-beso.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
@@ -9,6 +21,8 @@ const api = axios.create({
     'Content-Type': 'application/json',
   },
 });
+
+
 
 // Add a request interceptor to include the auth token
 api.interceptors.request.use(async (config) => {
