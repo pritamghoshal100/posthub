@@ -16,7 +16,7 @@ function Navigation() {
     <header className="App-header">
       <div className='header-wrapper-div'>
         <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-            <h1>My Blog</h1>
+            <h1>PostHub</h1>
         </Link>
       </div>
       <nav className='nav'>
